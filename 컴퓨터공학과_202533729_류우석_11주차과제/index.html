@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>여행 정보 안내</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Malgun Gothic", sans-serif;
+            background: #ffffff;
+            color: #222222;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: min(980px, 94%);
+            margin: 0 auto;
+        }
+
+        header {
+            background: #f3f3f3;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .top-bar {
+            padding: 12px 0;
+        }
+
+        .brand {
+            font-weight: 700;
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1f3d5a;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: #fafafa;
+            border: 1px solid #d9d9d9;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .hero h1 {
+            margin: 0 0 8px;
+            font-size: 28px;
+        }
+
+        .hero p {
+            margin: 0;
+            color: #555555;
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        .section h2 {
+            margin: 0 0 10px;
+            font-size: 21px;
+            border-bottom: 1px solid #d5d5d5;
+            padding-bottom: 6px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 12px;
+        }
+
+        .card {
+            border: 1px solid #d8d8d8;
+            padding: 12px;
+        }
+
+        .card h3 {
+            margin: 0 0 8px;
+            font-size: 17px;
+        }
+
+        .card p {
+            margin: 0;
+            color: #555555;
+            font-size: 14px;
+        }
+
+        .notice {
+            border: 1px solid #d8d8d8;
+            padding: 12px;
+        }
+
+        .notice ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .notice li {
+            margin-bottom: 6px;
+            font-size: 15px;
+        }
+
+        footer {
+            margin-top: 28px;
+            border-top: 1px solid #cccccc;
+            background: #f3f3f3;
+        }
+
+        .footer-inner {
+            padding: 14px 0;
+            color: #555555;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            .hero h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container top-bar">
+            <div class="brand">여행 정보 안내</div>
+            <nav>
+                <ul>
+                    <li><a href="#domestic">국내여행</a></li>
+                    <li><a href="#global">해외여행</a></li>
+                    <li><a href="#course">추천코스</a></li>
+                    <li><a href="#tips">여행준비팁</a></li>
+                    <li><a href="#desk">예약안내</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>기본 여행 계획 안내 페이지</h1>
+            <p>
+                과제 제출용으로 제작한 메인페이지입니다. 여행 카테고리와 추천 코스,
+                준비 팁, 예약 안내를 확인할 수 있도록 기본 항목 중심으로 구성했습니다.
+            </p>
+        </section>
+
+        <section class="section" id="domestic">
+            <h2>국내여행</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>강릉 1박 2일</h3>
+                    <p>바다 산책, 카페 거리, 로컬 시장 중심의 부담 없는 일정</p>
+                </article>
+                <article class="card">
+                    <h3>전주 주말 여행</h3>
+                    <p>한옥마을 중심으로 전통문화와 먹거리를 함께 즐기는 코스</p>
+                </article>
+                <article class="card">
+                    <h3>제주 힐링 코스</h3>
+                    <p>오름 산책과 해안도로 드라이브 위주의 여유로운 일정</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="global">
+            <h2>해외여행</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>오사카 3일</h3>
+                    <p>도톤보리, 성곽, 근교 소도시를 포함한 기본 도시 여행</p>
+                </article>
+                <article class="card">
+                    <h3>타이베이 3박 4일</h3>
+                    <p>야시장, 온천, 박물관을 균형 있게 구성한 입문 코스</p>
+                </article>
+                <article class="card">
+                    <h3>싱가포르 4일</h3>
+                    <p>도심 관광과 야경, 공원 산책까지 포함한 가족형 일정</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="course">
+            <h2>추천코스</h2>
+            <div class="notice">
+                <ul>
+                    <li>혼자 여행: 이동이 편한 도심 + 카페 + 박물관 구성</li>
+                    <li>친구 여행: 체험 활동 + 야간 명소 + 맛집 탐방 구성</li>
+                    <li>가족 여행: 짧은 이동거리 + 휴식 공간 + 실내 일정 구성</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="tips">
+            <h2>여행준비팁</h2>
+            <div class="notice">
+                <ul>
+                    <li>출발 2주 전: 예산, 교통, 숙소 우선 확정</li>
+                    <li>출발 3일 전: 일정표와 비상연락처 최종 점검</li>
+                    <li>당일 준비: 신분증, 충전기, 상비약, 간단한 간식 챙기기</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="desk">
+            <h2>예약안내</h2>
+            <div class="notice">
+                <ul>
+                    <li>운영시간: 평일 09:00 - 18:00</li>
+                    <li>문의메일: wooseok25@gachon.ac.kr</li>
+                    <li>상담전화: 02-000-0000</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            2026 여행기획 과제용 페이지 | 컴퓨터공학과 웹프로그래밍
+        </div>
+    </footer>
+</body>
+
+</html>
