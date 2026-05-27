@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>날씨표</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .menu {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .menu a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 12px;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>일기예보</h1>
+
+    <div class="menu">
+        <a href="index.html">시간표</a>
+        <a href="form.html">회원정보 입력</a>
+        <a href="weather.html">날씨표</a>
+    </div>
+
+    <table>
+        <tr>
+            <th rowspan="2">지역</th>
+            <th colspan="2">27일(목)</th>
+            <th colspan="2">28일(금)</th>
+            <th colspan="2">29일(토)</th>
+        </tr>
+        <tr>
+            <th>오전</th>
+            <th>오후</th>
+            <th>오전</th>
+            <th>오후</th>
+            <th>오전</th>
+            <th>오후</th>
+        </tr>
+        <tr>
+            <td>서울/경기도</td>
+            <td>☀️</td>
+            <td>☀️</td>
+            <td>🌥️</td>
+            <td>🌧️</td>
+            <td>☀️</td>
+            <td>☀️</td>
+        </tr>
+        <tr>
+            <td>강원도</td>
+            <td>🌥️</td>
+            <td>🌥️</td>
+            <td>☀️</td>
+            <td>☀️</td>
+            <td>🌧️</td>
+            <td>🌥️</td>
+        </tr>
+        <tr>
+            <td>제주도</td>
+            <td>☀️</td>
+            <td>🌥️</td>
+            <td>🌧️</td>
+            <td>🌧️</td>
+            <td>☀️</td>
+            <td>☀️</td>
+        </tr>
+    </table>
+</body>
+
+</html>
