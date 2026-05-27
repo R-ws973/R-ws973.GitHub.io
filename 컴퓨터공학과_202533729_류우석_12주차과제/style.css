@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+:root {
+  --bg-sky: #eaf3f5;
+  --bg-sand: #f7f1e6;
+  --paper: #fffdf9;
+  --ink: #2a3137;
+  --primary: #1f6f78;
+  --primary-deep: #17555d;
+  --menu-soft: #edf4ee;
+  --menu-chip: #dbe9dd;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
+  color: var(--ink);
+  background-color: var(--bg-sky);
+  background-image:
+    radial-gradient(circle at 16% 12%, rgba(87, 155, 167, 0.18) 0, rgba(87, 155, 167, 0) 30%),
+    radial-gradient(circle at 90% 10%, rgba(232, 191, 133, 0.2) 0, rgba(232, 191, 133, 0) 32%),
+    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.28) 0 14px, rgba(255, 255, 255, 0) 14px 28px),
+    linear-gradient(180deg, #f7fbfc 0%, var(--bg-sky) 45%, var(--bg-sand) 100%);
+  line-height: 1.55;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 96%;
+  max-width: 1180px;
+  margin: 0 auto;
+  background-color: rgba(255, 253, 249, 0.96);
+  border: 1px solid #d8d6cf;
+  border-radius: 14px;
+  box-shadow: 0 10px 26px rgba(28, 53, 58, 0.12);
+  overflow: hidden;
+}
+
+[class*="c"] {
+  float: left;
+  padding: 10px;
+}
+
+.c1 { width: 8.33%; }
+.c2 { width: 16.66%; }
+.c3 { width: 25%; }
+.c4 { width: 33.33%; }
+.c5 { width: 41.66%; }
+.c6 { width: 50%; }
+.c7 { width: 58.33%; }
+.c8 { width: 66.66%; }
+.c9 { width: 75%; }
+.c10 { width: 83.33%; }
+.c11 { width: 91.66%; }
+.c12 { width: 100%; }
+
+header {
+  background: linear-gradient(120deg, var(--primary-deep) 0%, var(--primary) 100%);
+  color: #fff;
+  border-bottom: 4px solid #104248;
+}
+
+header .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+header .subtitle {
+  font-size: 14px;
+  opacity: 0.92;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+nav li a {
+  display: block;
+  padding: 7px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.14);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav li a:hover,
+nav li a.active {
+  background-color: #fff;
+  color: var(--primary-deep);
+}
+
+aside.menu {
+  background-color: var(--menu-soft);
+  border-right: 1px solid #d0ddd2;
+}
+
+aside.menu h3 {
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+aside.menu li {
+  margin-bottom: 8px;
+}
+
+aside.menu li a {
+  display: block;
+  padding: 7px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: var(--menu-chip);
+}
+
+aside.menu li a:hover,
+aside.menu li a.active {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+main h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: var(--primary-deep);
+}
+
+main p {
+  margin-bottom: 12px;
+}
+
+main section {
+  margin-bottom: 20px;
+}
+
+.media-wrap {
+  margin: 14px 0;
+}
+
+.media-wrap video,
+.media-wrap img {
+  width: 100%;
+  border: 1px solid #cfcbbf;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(30, 45, 50, 0.08);
+}
+
+.caption {
+  margin-top: 6px;
+  color: #666;
+  font-size: 13px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border: 1px solid #d6d2c8;
+  border-radius: 10px;
+}
+
+.tip-box {
+  border-left: 4px solid var(--primary);
+  background-color: #f3f8f2;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  padding: 14px 10px;
+  background-color: #e8ece5;
+  color: #3f4b45;
+  border-top: 1px solid #cdd6cb;
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 767px) {
+  [class*="c"] {
+    width: 100%;
+  }
+
+  header .title {
+    font-size: 20px;
+  }
+
+  nav ul {
+    gap: 6px;
+  }
+
+  nav li {
+    width: calc(50% - 3px);
+  }
+
+  nav li a {
+    text-align: center;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
