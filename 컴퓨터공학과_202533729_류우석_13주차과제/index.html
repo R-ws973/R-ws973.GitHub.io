@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 웹툰 아카이브</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>나만의 웹툰 아카이브</h1>
+        <p>장르별로 골라보는 웹툰 큐레이션</p>
+    </div>
+
+    <div class="layout-wrap">
+        <div class="menu">
+            <a class="active" href="index.html">홈</a>
+            <a href="action.html">Action</a>
+            <a href="romance.html">Romance</a>
+            <a href="thriller.html">Thriller</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+
+        <div class="main">
+            <h2 class="section-title">Today Top 3</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card-cover theme-romance">
+                        <img class="card-image" src="Img/romance-spring-school.png" alt="봄빛고등학교 포스터">
+                        <span>Img/romance-spring-school.png</span>
+                    </div>
+                    <h3>오늘도 너의 날</h3>
+                    <p class="meta">로맨스 | 연재중</p>
+                    <p>봄 축제 준비를 함께 하며 가까워진 두 학생의 서툴지만 진심 어린 첫사랑 이야기.</p>
+                    <p class="tag">#학원로맨스 #청춘</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-cover theme-action">
+                        <img class="card-image" src="Img/action-transfer-student.png" alt="강철 전학생 포스터">
+                        <span>Img/action-transfer-student.png</span>
+                    </div>
+                    <h3>강철 전학생</h3>
+                    <p class="meta">액션 | 연재중</p>
+                    <p>평범한 전학생이 봉인된 능력을 각성하면서 학교 내 암투의 중심에 서게 된다.</p>
+                    <p class="tag">#학원액션 #성장형주인공</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-cover theme-action">
+                        <img class="card-image" src="Img/action-neon-chaser.png" alt="네온 추적자 포스터">
+                        <span>Img/action-neon-chaser.png</span>
+                    </div>
+                    <h3>던전 배달부</h3>
+                    <p class="meta">액션 | 연재중</p>
+                    <p>몬스터가 출몰하는 구역에 배달을 다니던 주인공이, 우연히 던전 핵심 문서를 전달하면서 전투에 휘말린다.</p>
+                    <p class="tag">#던전액션 #배달미션</p>
+                </div>
+            </div>
+
+            <div class="speech">
+                처음 보는 사람 추천 루트: Home -> Action -> Thriller -> Gallery
+            </div>
+
+            <section class="submit-box">
+                <h3>13-14주차 제출</h3>
+                <p>GitHub 주소, 네비게이션 영상</p>
+                <p class="submit-link">GitHub 주소: <a href="https://github.com/R-ws973/R-ws973.GitHub.io" target="_blank"
+                        rel="noopener noreferrer">https://github.com/R-ws973/R-ws973.GitHub.io</a></p>
+                <video class="nav-video" controls preload="metadata">
+                    <source src="video/navigation.mp4" type="video/mp4">
+                    브라우저가 video 태그를 지원하지 않습니다.
+                </video>
+                <p class="meta">video/navigation.mp4 파일을 넣으면 재생됩니다.</p>
+            </section>
+        </div>
+
+        <div class="right">
+            <h2>About Project</h2>
+            <p>웹프로그래밍 13,14주차 과제</p>
+            <ul class="checklist">
+                <li>주제: 가상 웹툰 소개 아카이브</li>
+                <li>구성: 장르별 썸네일 카드</li>
+                <li>반응형: 모바일 1열 레이아웃</li>
+                <li>GitHub 주소/네비게이션 영상 포함</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">2026 Webtoon Curating Project</div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
